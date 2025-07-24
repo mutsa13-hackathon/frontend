@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Match from "./pages/Match";
+import PostList from "./pages/PostList";
 import { Detail } from "./pages/Detail";
 import { Search } from "./pages/Search";
 import React from "react";
@@ -21,6 +22,7 @@ function App() {
           <Route path="/Detail" element={<Detail />} />
           <Route path="/Register" element={<Register />} />
           <Route path="/Match" element={<Match />} />
+          <Route path="/PostList" element={<PostList />} />
         </Route>
       </Routes>
     </BrowserRouter>
