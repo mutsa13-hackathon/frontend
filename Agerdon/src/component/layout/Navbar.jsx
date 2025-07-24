@@ -23,10 +23,12 @@ const Navbar = () => {
         </div>
       </div>
        <div className="mt-20 left-0 right-0 h-15 bg-white flex items-center justify-between text-black border-b-[1px] border-black">
-          <p className="pl-30 font-bold">이용 안내</p>
-          <p className="font-bold">매칭/예약</p>
-          <p className="font-bold">커뮤니티</p>
-          <p className="pr-30 font-bold">내정보</p>
+          <p className="pl-30 font-bold hover:text-main cursor-pointer">이용 안내</p>
+          <Link
+          to='/' 
+          className="font-bold hover:text-main cursor-pointer">매칭/예약</Link>
+          <p className="font-bold hover:text-main cursor-pointer">커뮤니티</p>
+          <p className="pr-30 font-bold hover:text-main cursor-pointer">내정보</p>
        </div>
      
     </>
