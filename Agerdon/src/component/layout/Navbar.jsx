@@ -24,10 +24,10 @@ const Navbar = () => {
             {" "}
             <CiCircleQuestion size={30} />{" "}
           </div>
-          <div>
+          <Link to="/login">
             {" "}
             <CiLogin size={30} />{" "}
-          </div>
+          </Link>
         </div>
       </div>
       <div className="mt-20 left-0 right-0 h-15 bg-white flex items-center justify-between text-black border-b-[1px] border-black">

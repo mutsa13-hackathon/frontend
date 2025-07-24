@@ -10,11 +10,7 @@ import PostList from "./pages/PostList";
 import { Detail } from "./pages/Detail";
 import { Search } from "./pages/Search";
 import { Money } from "./pages/Money";
-<<<<<<< HEAD
 import  Post  from "./pages/Post";
-=======
-import Post from "./pages/Post";
->>>>>>> 2b7011b40ddf72ca7552fa54fa2666136aafde05
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
 
