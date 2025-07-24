@@ -10,7 +10,7 @@ import PostList from "./pages/PostList";
 import { Detail } from "./pages/Detail";
 import { Search } from "./pages/Search";
 import { Money } from "./pages/Money";
-import { Post } from "./pages/Post";
+import  Post  from "./pages/Post";
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
 

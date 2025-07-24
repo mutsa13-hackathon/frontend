@@ -1,6 +1,7 @@
 import { FaRegCommentDots } from "react-icons/fa6";
 import posts from "../data/mockPost.json";
-
+import React from "react";
+import { Link } from "react-router-dom";
 const PostList = () => {
   return (
     <div className="w-full max-w-2xl bg-[#EEEEEE] px-4 py-6 rounded-lg mx-auto">
@@ -14,7 +15,9 @@ const PostList = () => {
             key={post.id}
             className="bg-white p-4 rounded-lg shadow-sm hover:bg-gray-50 transition"
           >
-            <div className="flex justify-between items-start">
+            <Link 
+            to='/Post'
+            className="flex justify-between items-start">
               <div>
                 <h2 className="font-semibold text-[16px] text-gray-900 mb-1">{post.title}</h2>
                 <p className="text-sm text-gray-500 line-clamp-1">{post.content}</p>
@@ -27,7 +30,7 @@ const PostList = () => {
                   <span className="text-sm">{post.comments}</span>
                 </div>
               </div>
-            </div>
+            </Link>
           </li>
         ))}
       </ul>
