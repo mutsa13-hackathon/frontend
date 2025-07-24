@@ -19,11 +19,12 @@ const Navbar = () => {
           >
             Login
           </Link>
-          <button
+          <Link
+            to="/Detail"
             className="bg-main text-white font-semibold rounded-sm px-5 py-2 hover:bg-[#3a35a0] transition"
           >
             Detail
-          </button>
+          </Link>
         </div>
       </nav>
     </>
