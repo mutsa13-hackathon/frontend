@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { CiBellOn } from "react-icons/ci";
 import { CiCircleQuestion } from "react-icons/ci";
 import { CiLogin } from "react-icons/ci";
+import LOGO from "../../assets/LOGO.svg";
 import React from "react";
 
 const Navbar = () => {
@@ -12,7 +13,7 @@ const Navbar = () => {
           to="/"
           className="absolute left-1/2 -translate-x-1/2 font-semibold text-2xl text-main"
         >
-          LOGO
+          <img src={LOGO} className="w-[150px]"/>
         </Link>
 
         <div className="flex gap-4">
