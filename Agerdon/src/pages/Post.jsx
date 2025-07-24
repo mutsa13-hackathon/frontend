@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Post = () => {
+const Post = () => {
   return (
     <div className="min-h-screen bg-[#f5f5f5] flex items-start justify-center pt-20 px-4">
       <div className="bg-white w-full max-w-md rounded-xl shadow-md p-6 space-y-6">
@@ -49,3 +49,5 @@ export const Post = () => {
     </div>
   );
 };
+
+export default Post;
