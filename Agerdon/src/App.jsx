@@ -10,6 +10,7 @@ import PostList from "./pages/PostList";
 import { Detail } from "./pages/Detail";
 import { Search } from "./pages/Search";
 import { Money } from "./pages/Money";
+import { Post } from "./pages/Post";
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
 
@@ -21,7 +22,8 @@ function App() {
           <Route index element={<Home />} />
           <Route path="/Login" element={<Login />} />
           <Route path="/Search" element={<Search />} />
-          <Route path="/Money" element={<Money />} />
+          <Route path="/Post" element={<Post />} />
+          <Route path="/Money" element={<Money/>} />
           <Route path="/Detail" element={<Detail />} />
           <Route path="/Register" element={<Register />} />
           <Route path="/Match" element={<Match />} />
