@@ -1,4 +1,5 @@
 import clsx from "clsx";
+import React from "react";
 
 // 공통 버튼 컴포넌트
 const Button = ({
@@ -16,7 +17,7 @@ const Button = ({
   // variant에 따라 다른 스타일 적용
   const variants = {
     default: "bg-blue-500 text-white hover:bg-blue-600 focus:ring-green-400",
-    Cart: "bg-main text-white hover:bg-blue-600 cursor-pointer ph:text-sm dt:text-base",
+    Cart: "bg-blue-500 text-white hover:bg-blue-600 cursor-pointer ph:text-sm dt:text-base",
     SignIn:
       "w-full bg-blue-500 text-white hover:bg-blue-600 focus:ring-blue-400 ph:text-base dt:text-lg",
     Register:
