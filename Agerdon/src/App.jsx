@@ -1,9 +1,10 @@
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import { Layout } from "./component/layout/Layout";
-import  Home  from "./pages/Home";
+import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
+import Match from "./pages/Match";
 import { Detail } from "./pages/Detail";
 import { Search } from "./pages/Search";
 import { Money } from "./pages/Money";
@@ -21,6 +22,7 @@ function App() {
           <Route path="/Money" element={<Money/>} />
           <Route path="/Detail" element={<Detail />} />
           <Route path="/Register" element={<Register />} />
+          <Route path="/Match" element={<Match />} />
         </Route>
       </Routes>
     </BrowserRouter>
