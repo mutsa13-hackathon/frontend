@@ -1,34 +1,35 @@
 import { Link } from "react-router-dom";
+import {CiBellOn} from "react-icons/ci";
+import { CiCircleQuestion } from "react-icons/ci";
+import { CiLogin } from "react-icons/ci";
 import React from "react";
 
 const Navbar = () => {
   return(
       <>
-      <nav className="fixed top-0 border-b-[1.5px] border-main left-0 right-0 h-20 text-black bg-white flex items-center justify-end px-10 z-50">
+      
+      <div className="fixed top-0 left-0 right-0 border-b-[1px] border-black h-20 text-black bg-white flex items-center justify-end px-10">
         <Link
           to="/"
           className="absolute left-1/2 -translate-x-1/2 font-semibold text-2xl text-main"
         >
-          AGERDON
+          LOGO
         </Link>
 
         <div className="flex gap-4">
-          <Link
-            to="/login"
-            className="bg-main text-white font-semibold rounded-sm px-5 py-2 hover:bg-[#3a35a0] transition"
-          >
-            Login
-          </Link>
-          <Link
-            to="/Detail"
-            className="bg-main text-white font-semibold rounded-sm px-5 py-2 hover:bg-[#3a35a0] transition"
-          >
-            Detail
-          </Link>
+          <div> <CiBellOn size={30}/> </div>
+          <div> <CiCircleQuestion  size={30}/> </div>
+          <div> <CiLogin size={30}/> </div>
         </div>
-      </nav>
+      </div>
+       <div className="mt-20 left-0 right-0 h-15 bg-white flex items-center justify-between text-black border-b-[1px] border-black">
+          <p className="pl-30 font-bold">이용 안내</p>
+          <p className="font-bold">매칭/예약</p>
+          <p className="font-bold">커뮤니티</p>
+          <p className="pr-30 font-bold">내정보</p>
+       </div>
+     
     </>
-
   );
 }
 

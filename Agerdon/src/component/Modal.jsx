@@ -1,5 +1,4 @@
 import React from "react";
-
 export const Modal = () => {
   
 
@@ -19,7 +18,7 @@ export const Modal = () => {
         </h2>
         <p className="text-sm text-gray-500 mb-6 leading-relaxed">
           내용1 <br />
-          내용2
+          내용2 
         </p>
 
         <button
