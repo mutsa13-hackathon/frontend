@@ -1,9 +1,9 @@
-import { useState } from "react";
-import { FaUserEdit } from "react-icons/fa";
-import { AiOutlineLogout } from "react-icons/ai";
+import { useEffect, useState } from "react";
 import { FiEdit2, FiTrash2 } from "react-icons/fi";
 import Person3 from "../assets/Person3.png";
 import Usage from "../assets/Usage.png";
+import { useAuthStore } from "../stores/authStore";
+import { Modal } from "../component/Modal";
 
 const routeData = [
   { day: "월", from: "연세대학교 강남센터", to: "홍대입구역 9번 출구" },
@@ -19,8 +19,18 @@ const historyData = [
 ];
 
 export default function MyPage() {
+  const isLoggedIn = useAuthStore((state) => state.isLoggedIn);
+  const [showModal, setShowModal] = useState(false);
+
+  useEffect(() => {
+    if (!isLoggedIn) {
+      setShowModal(true);
+    }
+  }, [isLoggedIn]);
+
   return (
     <div className="max-w-[960px] mx-auto p-8 text-gray-800">
+      {showModal && <Modal />}
       {/* 상단 네비게이션 */}
       <div className="flex justify-between items-center mb-6 border-b pb-4">
         <div className="flex space-x-10 text-sm font-semibold">

@@ -76,8 +76,6 @@ const Login = () => {
           <span className="text-sm font-semibold text-[#3C1E1E]">카카오로 로그인</span>
         </button>
       </div>
-
-      
     </div>
   );
 };
