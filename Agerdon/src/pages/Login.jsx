@@ -16,7 +16,7 @@ const Login = () => {
 
     if (email === "test@example.com" && password === "1234") {
       alert("로그인 성공!");
-      nav("/");
+      nav("/register");
     } else {
       alert("이메일 또는 비밀번호가 틀렸습니다.");
     }
@@ -77,12 +77,7 @@ const Login = () => {
         </button>
       </div>
 
-      <div className="mt-6 text-center text-sm text-gray-600">
-        아직 계정이 없으신가요?
-        <Link to="/register" className="ml-2 text-blue-600 hover:underline">
-          회원가입
-        </Link>
-      </div>
+      
     </div>
   );
 };
