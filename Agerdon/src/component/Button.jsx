@@ -21,6 +21,8 @@ const Button = ({
       "w-full bg-blue-500 text-white hover:bg-blue-600 focus:ring-blue-400 ph:text-base dt:text-lg",
     Register:
       "w-full bg-blue-500 text-white hover:bg-blue-600 focus:ring-blue-400 ph:text-base dt:text-lg",
+    Search:
+      "w-full bg-main text-white font-semibold rounded-xl hover:brightness-110 transition",
   };
 
   // 최종 스타일
