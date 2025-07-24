@@ -7,14 +7,11 @@ import Register from "./pages/Register";
 import Match from "./pages/Match";
 import MyPage from "./pages/MyPage";
 import PostList from "./pages/PostList";
+import { Info } from "./pages/Info";
 import { Detail } from "./pages/Detail";
 import { Search } from "./pages/Search";
 import { Money } from "./pages/Money";
-<<<<<<< HEAD
 import  Post  from "./pages/Post";
-=======
-import Post from "./pages/Post";
->>>>>>> 2b7011b40ddf72ca7552fa54fa2666136aafde05
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
 
@@ -27,6 +24,7 @@ function App() {
           <Route path="/Login" element={<Login />} />
           <Route path="/Search" element={<Search />} />
           <Route path="/Post" element={<Post />} />
+          <Route path="/Info" element={<Info />} />
           <Route path="/Money" element={<Money />} />
           <Route path="/Detail" element={<Detail />} />
           <Route path="/Register" element={<Register />} />

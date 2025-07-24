@@ -31,7 +31,7 @@ const Navbar = () => {
         </div>
       </div>
       <div className="mt-20 left-0 right-0 h-15 bg-white flex items-center justify-between text-black border-b-[1px] border-black">
-        <p className="pl-30 font-bold hover:text-main cursor-pointer">이용 안내</p>
+        <Link to='/Info' className="pl-30 font-bold hover:text-main cursor-pointer">이용 안내</Link>
         <Link to="/" className="font-bold hover:text-main cursor-pointer">
           매칭/예약
         </Link>
