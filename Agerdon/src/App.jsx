@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Match from "./pages/Match";
+import MyPage from "./pages/MyPage";
 import PostList from "./pages/PostList";
 import { Detail } from "./pages/Detail";
 import { Search } from "./pages/Search";
@@ -20,11 +21,12 @@ function App() {
           <Route index element={<Home />} />
           <Route path="/Login" element={<Login />} />
           <Route path="/Search" element={<Search />} />
-          <Route path="/Money" element={<Money/>} />
+          <Route path="/Money" element={<Money />} />
           <Route path="/Detail" element={<Detail />} />
           <Route path="/Register" element={<Register />} />
           <Route path="/Match" element={<Match />} />
           <Route path="/PostList" element={<PostList />} />
+          <Route path="/MyPage" element={<MyPage />} />
         </Route>
       </Routes>
     </BrowserRouter>
